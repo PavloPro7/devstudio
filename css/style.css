@@ -1,0 +1,10 @@
+:root {
+    --blue: #2196F3;
+    --grey: #2F303A;
+    --black: #212121;
+    --lightgrey: #757575;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--black);
+}
