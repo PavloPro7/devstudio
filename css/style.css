@@ -215,6 +215,9 @@ body {
 .footer-logo-cont {
   margin-bottom: 20px;
 }
+.logo-second {
+  color: var(--white);
+}
 .footer-address {
   font-size: 14px;
   line-height: 24px;
