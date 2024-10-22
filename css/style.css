@@ -29,7 +29,7 @@ body {
   letter-spacing: calc(1em / 33);
   text-decoration: none;
   color: #000;
-  line-height: 31px;
+  line-height: 1.19;
 }
 .logo-first {
   color: var(--blue);
@@ -50,11 +50,12 @@ body {
   letter-spacing: calc(1em / 50);
   color: var(--black);
   transition: color 0.3s linear;
+  cursor: pointer;
 }
 .nav-link:hover {
   color: var(--blue);
 }
-.nav-link:focus, .nav-link:active {
+.nav-link:focus {
   color: var(--blue);
 }
 .contacts-list {
@@ -96,7 +97,7 @@ body {
   margin: 0;
   color: var(--white);
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: calc(1em / 16.666666);
@@ -109,7 +110,7 @@ body {
   width: 216px;
   height: 50px;
   border-radius: 4px;
-  line-height: 30px;
+  line-height: 1.875;
   font-weight: 700;
   letter-spacing: calc(1em / 16.666666);
   cursor: pointer;
@@ -135,15 +136,15 @@ body {
   margin: 0;
   font-size: 14px;
   font-weight: 700;
-  line-height: 16px;
-  letter-spacing: calc(1em/33.333);
+  line-height: 1.14;
+  letter-spacing: calc(1em / 33.333);
 }
 .content-item-descr {
   font-size: 14px;
   color: var(--lightgrey);
   width: 270px;
-  letter-spacing: calc(1em/33.333);
-  line-height: 24px;
+  letter-spacing: calc(1em / 33.333);
+  line-height: 1.71;
   margin: 10px 30px auto 0;
 }
 
@@ -158,9 +159,8 @@ body {
   margin: 0 auto 50px auto;
   font-size: 36px;
   font-weight: 700;
-  line-height: 42px;
-  letter-spacing: calc(1em/33.333);
-
+  line-height: 1.166;
+  letter-spacing: calc(1em / 33.333);
 }
 .about-us-list {
   display: flex;
@@ -183,7 +183,7 @@ body {
   margin: 0 auto 50px auto;
   font-size: 36px;
   font-weight: 700;
-  line-height: 42px;
+  line-height: 1.166;
 }
 .authors-list {
   display: flex;
@@ -192,19 +192,19 @@ body {
 .authors-item {
   list-style-type: none;
   margin-right: 30px;
-  border-radius:0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
   box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 .authors-item-title {
   margin-top: 30px;
   font-weight: 500;
-  letter-spacing: calc(1em/33.333);
-  line-height: 19px;
+  letter-spacing: calc(1em / 33.333);
+  line-height: 1.1875;
 }
 .authors-item-descr {
   margin: 10px auto 30px auto;
   color: var(--lightgrey);
-  line-height: 19px;
+  line-height: 1.1875;
 }
 
 /* FOOTER */
@@ -222,8 +222,8 @@ body {
 }
 .footer-address {
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: calc(1em/33.333);
+  line-height: 1.71;
+  letter-spacing: calc(1em / 33.333);
   color: var(--white);
   font-style: normal;
 }
@@ -239,9 +239,9 @@ body {
   text-decoration: none;
   color: var(--lightgrey);
   transition: color 0.3s linear;
-
 }
-.footer-contacts-link:hover, .footer-contacts-link:focus {
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
   color: var(--blue);
 }
 
@@ -257,30 +257,32 @@ body {
   justify-content: center;
 }
 
- .filter-item {
+.filter-item {
   list-style-type: none;
-  color: var(--black);
+}
+
+.filter-item-button {
   background-color: var(--extralightgrey);
-  text-align: center;
+  border: none;
   margin-right: 8px;
   padding: 6px 22px;
   border-radius: 4px;
   font-weight: 500;
-  letter-spacing: calc(1em/33.333);
-  font-size: 16px;
-  line-height: 26px;
+  letter-spacing: calc(1em / 33.333);
+  line-height: 1.625;
   transition: color 0.1s linear;
   cursor: pointer;
- }
+}
 
- .filter-item:hover, .filter-item:focus, .filter-item:active {
+.filter-item-button:hover,
+.filter-item-button:focus {
   background-color: var(--blue);
   color: var(--white);
- }
+}
 
- /* PROJECTS */
+/* PROJECTS */
 
- .projects-list {
+.projects-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 34px 215px 0 215px;
@@ -289,33 +291,30 @@ body {
   padding-left: 215px;
   margin: 0 0 89px 0;
   justify-content: center;
- }
+}
 
- .projects-item {
+.projects-item {
   list-style-type: none;
   border: 1px solid var(--bordergrey);
   width: 370px;
-  /* height: 404px; */
+  height: 404px;
   margin-right: 30px;
   margin-bottom: 30px;
   padding: 0;
- }
+}
 
- .projects-item-title {
+.projects-item-title {
   margin: 20px 24px 0 24px;
   font-size: 18px;
   font-weight: 700;
-  text-align: 36px;
-  letter-spacing: calc(1em/16.666);
-  color: var(--black);
+  line-height: 2;
+  letter-spacing: calc(1em / 16.666);
   padding: 0;
- }
+}
 
- .projects-item-descr {
+.projects-item-descr {
   margin: 4px 24px 20px 24px;
-  line-height: 30px;
+  line-height: 1.875;
   color: var(--lightgrey);
-  letter-spacing: calc(1em/33.333);
-  font-size: 16px;
-  font-weight: 400;
- }
+  letter-spacing: calc(1em / 33.333);
+}
