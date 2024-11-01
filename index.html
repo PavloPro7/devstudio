@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,8 +34,12 @@
 
       <nav class="nav-cont">
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="/index.html">Студія</a></li>
-          <li class="nav-item"><a class="nav-link" href="/portfolio.html">Портфоліо</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Студія</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/portfolio.html">Портфоліо</a>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
         </ul>
       </nav>
@@ -52,13 +58,15 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-cont">
-          <h1 class="hero-title">
-            Ефективні рішення для <br />
-            вашого бізнесу
-          </h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+      <section class="hero-wrap">
+        <div class="hero">
+          <div class="hero-cont">
+            <h1 class="hero-title">
+              Ефективні рішення для <br />
+              вашого бізнесу
+            </h1>
+            <button class="hero-btn" type="button">Замовити послугу</button>
+          </div>
         </div>
       </section>
 
@@ -66,6 +74,14 @@
         <h2 class="content-title">Переваги</h2>
         <ul class="content-list">
           <li class="content-item">
+            <div class="content-item-image-cont">
+              <img
+                src="/images/antenna.png"
+                alt="antenna"
+                height="70"
+                class="content-item-image"
+              />
+            </div>
             <h3 class="content-item-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="content-item-descr">
               Ідейні міркування, і навіть початок повсякденної роботи з
@@ -73,6 +89,14 @@
             </p>
           </li>
           <li class="content-item">
+            <div class="content-item-image-cont">
+              <img
+                src="/images/clock.png"
+                alt="clock"
+                height="70"
+                class="content-item-image"
+              />
+            </div>
             <h3 class="content-item-title">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="content-item-descr">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
@@ -80,12 +104,28 @@
             </p>
           </li>
           <li class="content-item">
+            <div class="content-item-image-cont">
+              <img
+                src="/images/diagram.png"
+                alt="diagram"
+                height="70"
+                class="content-item-image"
+              />
+            </div>
             <h3 class="content-item-title">ПЛАНУВАННЯ</h3>
             <p class="content-item-descr">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li class="content-item">
+            <div class="content-item-image-cont">
+              <img
+                src="/images/astronaut.png"
+                alt="astronaut"
+                height="70"
+                class=""
+              />
+            </div>
             <h3 class="content-item-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="content-item-descr">
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -141,6 +181,40 @@
             />
             <h3 class="authors-item-title">Ігор Дем‘яненко</h3>
             <p class="authors-item-descr">Product Designer</p>
+            <ul class="autors-item-social-media-list">
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/instagram-svg.svg"
+                    alt="instagram"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/twitter-svg.svg"
+                    alt="twitter"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/fb-svg.svg"
+                    alt="facebook"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/linkedin-svg.svg"
+                    alt=""
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+            </ul>
           </li>
           <li class="authors-item">
             <img
@@ -152,6 +226,40 @@
             />
             <h3 class="authors-item-title">Ольга Рєпіна</h3>
             <p class="authors-item-descr">Frontend Developer</p>
+            <ul class="autors-item-social-media-list">
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/instagram-svg.svg"
+                    alt="instagram"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/twitter-svg.svg"
+                    alt="twitter"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/fb-svg.svg"
+                    alt="facebook"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/linkedin-svg.svg"
+                    alt=""
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+            </ul>
           </li>
           <li class="authors-item">
             <img
@@ -163,6 +271,40 @@
             />
             <h3 class="authors-item-title">Микола Тарасов</h3>
             <p class="authors-item-descr">Marketing</p>
+            <ul class="autors-item-social-media-list">
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/instagram-svg.svg"
+                    alt="instagram"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/twitter-svg.svg"
+                    alt="twitter"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/fb-svg.svg"
+                    alt="facebook"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/linkedin-svg.svg"
+                    alt=""
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+            </ul>
           </li>
           <li class="authors-item">
             <img
@@ -174,6 +316,40 @@
             />
             <h3 class="authors-item-title">Михайло Єрмаков</h3>
             <p class="authors-item-descr">UI Designer</p>
+            <ul class="autors-item-social-media-list">
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/instagram-svg.svg"
+                    alt="instagram"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/twitter-svg.svg"
+                    alt="twitter"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/fb-svg.svg"
+                    alt="facebook"
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+              <li class="autors-item-social-media-item">
+                <a href="#" class="autors-item-social-media-item-link"
+                  ><img
+                    src="/images/linkedin-svg.svg"
+                    alt=""
+                    class="autors-item-social-media-item-img"
+                /></a>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
