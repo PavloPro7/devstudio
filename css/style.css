@@ -98,6 +98,24 @@ body {
   color: var(--blue);
 }
 
+.contacts-link-tel {
+  position: absolute;
+  top: 32px;
+  right: 438px;
+  transition: filter 0.3s linear;
+  padding: 0;
+  width: 10px;
+  height: 16px;
+}
+.tel-link-img {
+  padding-right: 132px;
+}
+.contacts-link-tel:hover,
+.contacts-link-tel:focus {
+  filter: invert(55%) sepia(100%) saturate(600%) hue-rotate(175deg) brightness(90%) contrast(90%);
+}
+
+
 /* HERO */
 .hero-wrap {
   background-image: url('/images/background-image.jpg');
