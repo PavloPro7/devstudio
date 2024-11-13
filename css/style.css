@@ -38,12 +38,29 @@ body {
 .nav-list {
   display: flex;
   padding: 0;
-  margin: 32px 344px auto auto;
+  margin: 32px 344px 0 auto;
 }
 .nav-item {
   list-style-type: none;
   margin-right: 50px;
+  height: 48px;
 }
+
+.nav-item-divider {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: var(--blue);
+  margin-top: 24px;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+  transform: scale(0);
+}
+
+.nav-item:hover .nav-item-divider, .active {
+  transform: scale(1);
+}
+
 .nav-link {
   text-decoration: none;
   font-size: 14px;
@@ -52,8 +69,9 @@ body {
   color: var(--black);
   transition: color 0.3s linear;
   cursor: pointer;
+  padding-bottom: 32px;
 }
-.nav-link:hover {
+.nav-link:hover, .active {
   color: var(--blue);
 }
 .nav-link:focus {
@@ -545,7 +563,7 @@ body {
   margin: 0;
 }
 
-.projects-item-cont:hover 
+.projects-item:hover 
 .projects-item-cont-descr
 {
   display: block;
