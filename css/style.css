@@ -76,6 +76,7 @@ body {
   color: var(--lightgrey);
   transition: color 0.3s linear;
   padding: 0;
+  display: flex;
 }
 .contacts-link-bg {
   width: 16px;
@@ -84,7 +85,7 @@ body {
   padding: 0 165px 0 0;
   transition: filter 0.3s linear;
   position: absolute;
-  left: 1160px;
+  left: 1150px;
   top: 34px;
 }
 .contacts-link-bg:hover,
@@ -99,19 +100,18 @@ body {
 }
 
 .contacts-link-tel {
-  position: absolute;
-  top: 32px;
-  right: 438px;
+  
   transition: filter 0.3s linear;
   padding: 0;
   width: 10px;
   height: 16px;
+  margin-right: 10px; 
 }
 .tel-link-img {
-  padding-right: 132px;
+  z-index: 1;
 }
-.contacts-link-tel:hover,
-.contacts-link-tel:focus {
+.contacts-link:hover .contacts-link-tel,
+.contacts-link:focus .contacts-link-tel {
   filter: invert(55%) sepia(100%) saturate(600%) hue-rotate(175deg) brightness(90%) contrast(90%);
 }
 
