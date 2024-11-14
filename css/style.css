@@ -162,7 +162,7 @@ body {
   letter-spacing: calc(1em / 16.666666);
   margin-bottom: 30px;
 }
-.hero-btn {
+.open-modal-btn {
   border: none;
   background-color: var(--blue);
   color: var(--white);
