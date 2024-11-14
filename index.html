@@ -84,12 +84,11 @@
               Ефективні рішення для <br />
               вашого бізнесу
             </h1>
-            <button class="open-modal-btn" type="button">Замовити послугу</button>
 
-            <!-- modal window -->
-
-            <div id="my-modal" class="modal"></div>
-              <div class="modal-content">
+             <!-- modal window -->
+            <button id="openModalBtn" class="open-modal-btn" type="button">Замовити послугу</button>
+            <div id="myModal" class="modal">
+              <div  class="modal-content">
                 <span class="close">&times;</span>
                 <form>
                   <label for="name">Ім'я</label>
@@ -104,9 +103,11 @@
                   <input type="email" id="email" name="email">
                   <br>
                   <br>
-                  <label for="comment"></label>
-                  <textarea name="comment" id="comment"></textarea>
+                  <label for="comment">Коментар</label>
+                  <textarea name="comment" id="comment">Введіть текст</textarea>
                   <br>
+                  <label for="checkbox">Погоджуюся з розсилкою та приймаю Умови договору</label>
+                  <input type="checkbox" id="myCheckbox" name="checkbox">
                   <br>
                   <input type="submit" value="Відправити">
                 </form>
