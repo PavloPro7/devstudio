@@ -6,6 +6,7 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function () {
   modal.style.display = "block";
 };
+
 // Закриття модального вікна по натисканню на <span> (x)
 span.onclick = function () {
   modal.style.display = "none";
@@ -13,6 +14,6 @@ span.onclick = function () {
 // Закриття модального вікна по натисненню поза ним
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.style.display = "none"; 
   }
 };
