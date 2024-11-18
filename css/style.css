@@ -249,7 +249,7 @@ form {
 .modal-data {
   display: grid;
   margin: 12px 40px 0 40px;
-
+  position: relative;
 }
 
 
@@ -259,16 +259,17 @@ form {
   color: var(--lightgrey);
   letter-spacing: calc(1em/100);
 }
-.phone-icon {
+.icon {
   position: absolute;
-  z-index: 1;
-  position: absolute
+  top: 24px;
+  left: 12px;
 }
 #name, #phone, #email {
   border: 1px solid var(--bordergrey);
   border-radius: 4px;
   transition: 0.3s border ease;
-  z-index: 2;
+  height: 40px;
+  padding-left: 36px;
 }
 #comment:hover, #comment:focus, #name:hover, #name:focus,
 #phone:hover, #phone:focus, #email:hover, #email:focus {
