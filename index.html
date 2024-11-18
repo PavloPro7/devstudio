@@ -96,24 +96,29 @@
                   <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
                   <form>
                     <div class="modal-data">
-                      <label for="name">Ім'я</label>
+                      <label class="modal-label" for="name">Ім'я</label>
+                      <img src="images/name.png" alt="name" class="name-icon">
                       <input type="text" id="name" name="name">
                     </div>
                     <div class="modal-data">
-                      <label for="phone">Телефон</label>
+                      <label class="modal-label" for="phone">Телефон</label>
+                      <img src="images/phone.png" alt="phone" class="phone-icon">
                       <input type="tel" id="phone" name="phone">
                     </div>
                     <div class="modal-data">
-                      <label for="email">Пошта</label>
+                      <label class="modal-label" for="email">Пошта</label>
+                      <img src="images/email.png" alt="email" class="email-icon">
                       <input type="email" id="email" name="email">
                     </div>
                     <div class="modal-data">
-                      <label for="comment">Коментар</label>
-                      <textarea name="comment" id="comment">Введіть текст</textarea>
+                      <label class="modal-label" for="comment">Коментар</label>
+                      <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
                     </div>
-                    <input type="checkbox" id="myCheckbox" name="checkbox">
-                    <label for="checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови договору</a></label>
-                    <input type="submit" value="Відправити">
+                    <div class="checkbox-cont">
+                      <input type="checkbox" id="myCheckbox" name="checkbox">
+                      <label class="checkbox-text" for="checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови договору</a></label>
+                    </div>
+                    <input class="inmodal-btn" type="submit" value="Відправити">
                   </form>
                 </div>
           </div>
