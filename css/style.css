@@ -1,5 +1,5 @@
 :root {
-  --blue: red;
+  --blue: #E41313;
   --grey: #2f303a;
   --black: #212121;
   --lightgrey: #757575;
@@ -181,9 +181,7 @@ body {
 
 
 
-form {
-  margin: 12px 40px 40px 12px;
-}
+
 .modal {
   display: none;
   position: fixed;
@@ -207,6 +205,10 @@ form {
   letter-spacing: calc(1em/33.333);
   line-height: 23px;
   height: 23px;
+}
+
+form {
+  margin: 12px 40px 40px 12px;
 }
 
 .modal-content {
@@ -259,23 +261,43 @@ form {
   color: var(--lightgrey);
   letter-spacing: calc(1em/100);
 }
+
 .icon {
   position: absolute;
   top: 24px;
   left: 12px;
 }
-#name, #phone, #email {
+
+.icon-hover {
+  position: absolute;
+  top: 24px;
+  left: 12px;
+  display: block;
+}
+
+.input {
   border: 1px solid var(--bordergrey);
   border-radius: 4px;
   transition: 0.3s border ease;
   height: 40px;
   padding-left: 36px;
 }
-#comment:hover, #comment:focus, #name:hover, #name:focus,
-#phone:hover, #phone:focus, #email:hover, #email:focus {
-  border: 1px solid var(--black);
-  color: var(--black);
+
+.input:hover, #comment:focus, #comment:hover,
+.input:focus {
+  border: 1px solid var(--blue);
+  color: var(--blue);
 }
+
+.input:hover .icon-hover {
+  display: none;
+}
+
+
+
+
+
+
 #comment {
   height: 120px;
   border: 1px solid var(--bordergrey);
@@ -719,8 +741,8 @@ form {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2196f3;
-  opacity: 90%;
+  background-color: var(--blue);
+  opacity: 60%;
   padding: 63px 24px;
   line-height: 28px;
   letter-spacing: calc(1em/33.3333);
