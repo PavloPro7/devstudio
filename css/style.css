@@ -229,7 +229,6 @@ form {
 
 
 .close {
-  color: var(--white);
   float: right; /* ??????????????????????? */
   color: var(--black);
   position: absolute;
@@ -251,6 +250,7 @@ form {
   color: var(--blue);
   text-decoration: none;
   cursor: pointer;
+  border: 1px solid var(--blue)
 }
 .modal-data {
   display: grid;
@@ -706,6 +706,18 @@ input[type="checkbox"] {
   background-color: #44454e;
   border-radius: 50%;
 }
+
+.footer-soc-cont {
+  display: flex;
+}
+
+
+
+
+
+
+
+
 
 
 /* PORTFOLIO.HTML */
