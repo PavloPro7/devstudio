@@ -634,7 +634,7 @@ form {
 .footer {
   display: flex;
   background-color: var(--grey);
-  padding: 0;
+  padding-left: 215px;
   margin: 0;
   width: 100%;
   position: relative;
@@ -672,8 +672,7 @@ form {
 .footer-contacts-link:focus {
   color: var(--blue);
 }
-.footer-soc-list-cont {
-}
+
 .footer-title {
   text-transform: uppercase;
   color: var(--white);
