@@ -673,7 +673,6 @@ form {
   color: var(--blue);
 }
 .footer-soc-list-cont {
-  display: grid;
 }
 .footer-title {
   text-transform: uppercase;
@@ -683,6 +682,7 @@ form {
   font-size: 14px;
   letter-spacing: calc(1em / 33.333);
   font-weight: 700;
+  line-height: 16px;
 }
 .footer-soc-list {
   margin-left: 70px;
