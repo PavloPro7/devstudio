@@ -55,10 +55,14 @@ body {
   padding: 0;
   margin: 32px 19.6875% 0 auto;
 }
+
 .nav-item {
   list-style-type: none;
-  margin-right: 50px;
+  margin-right: 17.543%;
   height: 48px;
+}
+.nav-item:last-child {
+  margin-right: 0;
 }
 
 .nav-item-divider {
@@ -68,7 +72,7 @@ body {
   background-color: var(--blue);
   margin-top: 24px;
   border-radius: 2px;
-  transition: transform 0.3s ease;
+  transition: 0.3s transform ease;
   transform: scale(0);
 }
 
@@ -97,11 +101,19 @@ body {
 .contacts-list {
   display: flex;
   padding: 0;
-  margin: 32px auto;
+  margin: 32px 13.4375% 32px auto;
+
 }
 .contacts-item {
   list-style-type: none;
-  margin-right: 50px;
+  margin-right: 9.009%;
+  max-height: 16px;
+  min-height: 14px;
+  max-width: 135px;
+  min-width: 122px;
+}
+.contact-item:last-child {
+  margin-right: 0;
 }
 .contacts-link {
   text-decoration: none;
@@ -112,6 +124,7 @@ body {
   transition: color 0.3s linear;
   padding: 0;
   display: flex;
+  position: relative;
 }
 .contacts-link-bg {
   width: 16px;
@@ -120,13 +133,13 @@ body {
   padding: 0 165px 0 0;
   transition: filter 0.3s linear;
   position: absolute;
-  left: 1150px;
-  top: 34px;
+  left: -20%;
+  top: 0px;
 }
 .contacts-link-bg:hover,
 .contacts-link-bg:focus {
-  filter: invert(55%) sepia(100%) saturate(600%) hue-rotate(175deg)
-    brightness(90%) contrast(90%);
+  filter: invert(47%) sepia(93%) saturate(7493%) hue-rotate(342deg)
+    brightness(95%) contrast(104%);
 }
 .contacts-link:hover {
   color: var(--blue);
@@ -147,8 +160,8 @@ body {
 }
 .contacts-link:hover .contacts-link-tel,
 .contacts-link:focus .contacts-link-tel {
-  filter: invert(55%) sepia(100%) saturate(600%) hue-rotate(175deg)
-    brightness(90%) contrast(90%);
+  filter: invert(47%) sepia(93%) saturate(7493%) hue-rotate(342deg)
+    brightness(95%) contrast(104%);
 }
 
 /* HERO */
