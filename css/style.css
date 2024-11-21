@@ -1,3 +1,15 @@
+@media (max-width: 480) {
+  body{
+   width: auto;
+  }
+  .modal {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
 :root {
   --blue: #e41313;
   --grey: #2f303a;
@@ -11,7 +23,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--black);
-  width: 1600px;
+  width: auto;
   margin: 0;
 }
 
@@ -19,9 +31,12 @@ body {
 .header {
   display: flex;
   margin: 0;
+  max-height: 80px;
+  min-height: 60px;
 }
 .header-logo-cont {
-  margin: 24px 93px 25px 216px;
+  margin: 24px 5.75% 25px 13.4375%;
+  padding: 0;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -38,7 +53,7 @@ body {
 .nav-list {
   display: flex;
   padding: 0;
-  margin: 32px 344px 0 auto;
+  margin: 32px 19.6875% 0 auto;
 }
 .nav-item {
   list-style-type: none;
