@@ -697,6 +697,7 @@ form {
 @media (max-width: 1280px) {
   .customers {
     margin-top: 270px;
+    margin-right: 4%;
   }
 }
 .customers-title {
@@ -883,6 +884,7 @@ form {
     display: grid;
     justify-content: center;
     text-align: center;
+    margin-left: 0;
   }
 }
 .subscribe-label {
