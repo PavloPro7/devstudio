@@ -786,7 +786,7 @@ form {
 .footer {
   display: flex;
   background-color: var(--grey);
-  padding-left: 13.4375%;
+  padding-left: 0;
   margin: 0;
   width: 100%;
   position: relative;
