@@ -805,6 +805,7 @@ form {
 @media (max-width: 1280px) {
   .footer-contacts-cont {
     display: flex;
+    justify-content: space-between;
   }
 }
 .footer-cont {
@@ -994,8 +995,8 @@ form {
   grid-template-columns: repeat(3, 1fr);
   padding: 34px 215px 0 215px;
   padding-top: 34px;
-  padding-right: 215px;
-  padding-left: 215px;
+  padding-right: 13.5%;
+  padding-left: 13.5%;
   margin: 0 0 89px 0;
   justify-content: center;
 }
@@ -1003,8 +1004,8 @@ form {
 .projects-item {
   list-style-type: none;
   border: 1px solid var(--bordergrey);
-  width: 370px;
-  height: 404px;
+  width: 100%;
+  height: auto;
   margin-right: 30px;
   margin-bottom: 30px;
   padding: 0;
@@ -1023,10 +1024,13 @@ form {
   overflow: hidden;
   position: relative;
   margin: 0;
+
 }
 
 .projects-item-cont img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .projects-item-cont-descr {
