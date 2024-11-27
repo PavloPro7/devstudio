@@ -127,6 +127,7 @@ body {
   min-height: 14px;
   max-width: 135px;
   min-width: 122px;
+  position: relative;
 }
 .contacts-item:last-child {
   margin-right: 0;
@@ -152,42 +153,53 @@ body {
   position: relative;
 }
 
-.contacts-link-bg {
+.contacts-link-bg, .contacts-link-bg-hover {
   width: 16px;
   height: 12px;
   margin: 0 6px 0 0;
   padding: 0;
-  transition: filter 0.3s linear;
   position: absolute;
   left: -20%;
   top: 0px;
+  z-index: 0;
 }
-.contacts-link-bg:hover,
-.contacts-link-bg:focus {
-  filter: invert(47%) sepia(93%) saturate(7493%) hue-rotate(342deg)
-    brightness(95%) contrast(104%);
+.contacts-link-bg-hover {
+  display: none;
 }
+
+
 .contacts-link:hover {
   color: var(--blue);
 }
 .contacts-link:focus {
   color: var(--blue);
 }
+.contacts-link:hover .contacts-link-bg-hover,
+.contacts-link:focus .contacts-link-bg-hover {
+  display: block;
+  z-index: 1;
+}
 
 .contacts-link-tel {
-  transition: filter 0.3s linear;
   padding: 0;
   width: 10px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 8px;
+  margin-left: 22px;
+}
+.contacts-link-tel-hover {
+  position: absolute;
+  left: 22px;
+  display: none;
+}
+.tel-item {
+  position: relative;
 }
 .tel-link-img {
-  z-index: 1;
 }
-.contacts-link:hover .contacts-link-tel,
-.contacts-link:focus .contacts-link-tel {
-  filter: invert(47%) sepia(93%) saturate(7493%) hue-rotate(342deg)
-    brightness(95%) contrast(104%);
+.contacts-link:hover .contacts-link-tel-hover,
+.contacts-link:focus .contacts-link-tel-hover {
+  display: block;
 }
 
 /* HERO */
@@ -1001,7 +1013,6 @@ form {
   margin: 0 0 10% 0;
   justify-content: center;
   height: auto;
-  overflow: hidden;
 }
 @media (max-width: 1280px) {
   .projects-list {
