@@ -10,14 +10,14 @@
 }
 
 :root {
-  --blue: #e41313;
+  --red: #e41313;
   --grey: #2f303a;
   --black: #212121;
   --lightgrey: #757575;
   --white: #fff;
   --extralightgrey: #f5f4fa;
   --bordergrey: #eee;
-  --bluegrey: #afb1b8;
+  --extragrey: #afb1b8;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -57,7 +57,7 @@ body {
   line-height: 1.19;
 }
 .logo-first {
-  color: var(--blue);
+  color: var(--red);
 }
 .nav-list {
   display: flex;
@@ -78,7 +78,7 @@ body {
   display: block;
   height: 4px;
   width: 100%;
-  background-color: var(--blue);
+  background-color: var(--red);
   margin-top: 24px;
   border-radius: 2px;
   transition: 0.3s transform ease;
@@ -102,10 +102,10 @@ body {
 }
 .nav-link:hover,
 .active {
-  color: var(--blue);
+  color: var(--red);
 }
 .nav-link:focus {
-  color: var(--blue);
+  color: var(--red);
 }
 .contacts-list {
   display: flex;
@@ -169,10 +169,10 @@ body {
 
 
 .contacts-link:hover {
-  color: var(--blue);
+  color: var(--red);
 }
 .contacts-link:focus {
-  color: var(--blue);
+  color: var(--red);
 }
 .contacts-link:hover .contacts-link-bg-hover,
 .contacts-link:focus .contacts-link-bg-hover {
@@ -195,8 +195,7 @@ body {
 .tel-item {
   position: relative;
 }
-.tel-link-img {
-}
+
 .contacts-link:hover .contacts-link-tel-hover,
 .contacts-link:focus .contacts-link-tel-hover {
   display: block;
@@ -236,7 +235,7 @@ body {
 }
 .open-modal-btn {
   border: none;
-  background-color: var(--blue);
+  background-color: var(--red);
   color: var(--white);
   width: 216px;
   height: 50px;
@@ -322,10 +321,10 @@ form {
 }
 .close:hover,
 .close:focus {
-  color: var(--blue);
+  color: var(--red);
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid var(--blue);
+  border: 1px solid var(--red);
 }
 .modal-data {
   display: grid;
@@ -369,8 +368,8 @@ form {
 #comment:focus,
 #comment:hover,
 .input:focus {
-  border: 1px solid var(--blue);
-  color: var(--blue);
+  border: 1px solid var(--red);
+  color: var(--red);
 }
 
 .input-cont:hover .icon-hover {
@@ -427,7 +426,7 @@ form {
   border-radius: 2px;
 }
 #checkboxtext input[type="checkbox"]:checked + .checkmark {
-  background-color: var(--blue);
+  background-color: var(--red);
 }
 .checkbox-text input[type="checkbox"]:checked + .checkmark::after {
   content: "";
@@ -443,7 +442,7 @@ form {
 }
 
 .checkbox-link {
-  color: var(--blue);
+  color: var(--red);
   font-size: 14px;
   letter-spacing: calc(1em / 33.333);
   line-height: 24px;
@@ -453,7 +452,7 @@ form {
 .inmodal-btn {
   height: 50px;
   width: 200px;
-  background-color: var(--blue);
+  background-color: var(--red);
   color: var(--white);
   box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
@@ -685,7 +684,7 @@ form {
 }
 .autors-item-social-media-item:hover,
 .autors-item-social-media-item:focus {
-  background-color: var(--blue);
+  background-color: var(--red);
   border-radius: 50%;
 }
 .authors-item-social-media-item-link {
@@ -758,14 +757,14 @@ form {
   display: flex;
   width: 100%;
   height: 92px;
-  border: var(--bluegrey) solid 1px;
+  border: var(--extragrey) solid 1px;
   border-radius: 4px;
   transition: color 0.3s linear;
   position: relative;
 }
 .customers-item-link:hover,
 .customers-item-link:focus {
-  border: var(--blue) solid 1px;
+  border: var(--red) solid 1px;
 }
 
 .customers-item-link-img {
@@ -844,7 +843,7 @@ form {
 }
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
-  color: var(--blue);
+  color: var(--red);
 }
 
 .footer-title {
@@ -909,18 +908,15 @@ form {
   transition: 0, 3s border linear;
 
 }
-@media (max-width: 1280px) {
-  .subscribe-input {
-  }
-}
+
 .subscribe-input:hover,
 .subscribe-input:focus {
-  border: 1px solid var(--blue);
+  border: 1px solid var(--red);
 }
 .subscribe-submit {
   width: 200px;
   height: 50px;
-  background-color: var(--blue);
+  background-color: var(--red);
   border: none;
   border-radius: 4px;
   text-align: left;
@@ -983,7 +979,7 @@ form {
 
 .filter-item-button:hover,
 .filter-item-button:focus {
-  background-color: var(--blue);
+  background-color: var(--red);
   color: var(--white);
 }
 
@@ -1045,7 +1041,7 @@ form {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--blue);
+  background-color: var(--red);
   opacity: 60%;
   padding: 63px 24px;
   line-height: 28px;
