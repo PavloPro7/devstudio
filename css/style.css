@@ -189,14 +189,32 @@ body {
 }
 
 #openMenuBtn {
+  display: none;
   position: relative;
   align-self: center;
+  height: 16px;
+  width: 24px;
+  border: none;
+
+  @media screen and (max-width: 640px) {
+    display: initial;
+  }
 }
 .burger {
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
 }
 .burger-hover {
+  display: none;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+#openMenuBtn:hover .burger-hover {
+  display: initial;
 }
 
 /* HERO */
