@@ -1,14 +1,3 @@
-@media (max-width: 480) {
-  body {
-    width: auto;
-    height: auto;
-  }
-  .modal {
-    width: 100%;
-    height: auto;
-  }
-}
-
 :root {
   --red: #e41313;
   --grey: #2f303a;
@@ -31,21 +20,23 @@ body {
 .header {
   display: flex;
   margin: 0;
+  padding: 0 0 0 13.4375vw;
   max-height: 80px;
   min-height: 60px;
   width: 100%;
-}
-
-.header-logo-cont {
-  margin: 24px 5.75% 25px 13.4375%;
-  padding: 0;
 
   @media screen and (max-width: 1280px) {
-    margin-left: 2%;
+    padding: 0 2vw;
+  }
+  @media screen and (max-width: 640px) {
+    justify-content: space-between;
   }
 }
 
-
+.header-logo-cont {
+  margin: 24px 5.75% 25px 0;
+  padding: 0;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -58,12 +49,16 @@ body {
 .logo-first {
   color: var(--red);
 }
+
 .nav-list {
   display: flex;
   padding: 0;
   margin: 32px 19.6875% 0 0%;
-}
 
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
+}
 .nav-item {
   list-style-type: none;
   margin-right: 17.543%;
@@ -72,7 +67,6 @@ body {
 .nav-item:last-child {
   margin-right: 0;
 }
-
 .nav-item-divider {
   display: block;
   height: 4px;
@@ -83,12 +77,10 @@ body {
   transition: 0.3s transform ease;
   transform: scale(0);
 }
-
 .nav-item:hover .nav-item-divider,
 .active {
   transform: scale(1);
 }
-
 .nav-link {
   text-decoration: none;
   font-size: 14px;
@@ -106,6 +98,7 @@ body {
 .nav-link:focus {
   color: var(--red);
 }
+
 .contacts-list {
   display: flex;
   padding: 0;
@@ -117,8 +110,10 @@ body {
     display: grid;
     margin-top: 21px;
   }
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
 }
-
 .contacts-item {
   list-style-type: none;
   margin-right: 9.009%;
@@ -138,8 +133,6 @@ body {
     margin: 10px 0px 0 -24px;
   }
 }
-
-
 .contacts-link {
   text-decoration: none;
   font-size: 14px;
@@ -151,7 +144,6 @@ body {
   display: flex;
   position: relative;
 }
-
 .contacts-link-bg, .contacts-link-bg-hover {
   width: 16px;
   height: 12px;
@@ -165,8 +157,6 @@ body {
 .contacts-link-bg-hover {
   display: none;
 }
-
-
 .contacts-link:hover {
   color: var(--red);
 }
@@ -178,7 +168,6 @@ body {
   display: block;
   z-index: 1;
 }
-
 .contacts-link-tel {
   padding: 0;
   width: 10px;
@@ -194,10 +183,20 @@ body {
 .tel-item {
   position: relative;
 }
-
 .contacts-link:hover .contacts-link-tel-hover,
 .contacts-link:focus .contacts-link-tel-hover {
   display: block;
+}
+
+#openMenuBtn {
+  position: relative;
+  align-self: center;
+}
+.burger {
+
+}
+.burger-hover {
+  position: absolute;
 }
 
 /* HERO */
@@ -917,7 +916,6 @@ form {
   border-radius: 4px;
   width: 358px;
   height: 50px;
-  transition: 0, 3s border linear;
 
   @media screen and (max-width: 1280px) {
     margin-right: 0;
