@@ -220,9 +220,22 @@ body {
 .header-menu {
   display: none;
   position: fixed;
+  width: 100vw;
+  height: 100%;
+  background-color: var(--white);
+  z-index: 1;
+  overflow: auto;
+  margin: 0 0 0 -2vw;
 }
-
-
+#navCont {
+  
+}
+#contactsList {
+  
+}
+.menu-close {
+  float: right;
+}
 
 
 /* HERO */
