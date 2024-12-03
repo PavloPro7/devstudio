@@ -217,6 +217,14 @@ body {
   display: initial;
 }
 
+.header-menu {
+  display: none;
+  position: fixed;
+}
+
+
+
+
 /* HERO */
 .hero-wrap {
   background-image: url("/images/background-image.jpg");

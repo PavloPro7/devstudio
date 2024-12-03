@@ -69,10 +69,20 @@
       </li>
     </ul>
 
-    <button id="openMenuBtn">
+    <button id="openMenuBtn" onclick="openHeaderMenu()">
       <img src="/images/burger.png" alt="burger" class="burger">
       <img src="/images/burger-red.png" alt="burger" class="burger-hover">
     </button>
+
+    <div id="headerMenu" class="header-menu">
+      <div class="menu-content">
+          <span class="menuClose" onclick="closeHeaderMenu()">&times;</span>
+
+          <nav id="navCont"></nav>
+
+          <ul id="contactsList"></ul>
+      </div>
+  </div>
 
   </header>
 

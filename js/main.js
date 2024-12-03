@@ -1,3 +1,8 @@
+function openHeaderMenu() {
+  document.getElementById('headerMenu').style.display = "block";
+}
+
+
 // Отримуємо елементи
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("openModalBtn");
