@@ -111,7 +111,8 @@ body {
     margin-top: 21px;
   }
   @media screen and (max-width: 640px) {
-    display: none;
+    /* display: none; */
+
   }
 }
 .contacts-item {
@@ -223,6 +224,7 @@ body {
   width: 100vw;
   height: 100%;
   background-color: var(--white);
+  opacity: 0.5;
   z-index: 1;
   overflow: auto;
   margin: 0 0 0 -2vw;

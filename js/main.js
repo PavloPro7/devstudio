@@ -1,8 +1,15 @@
 function openHeaderMenu() {
   document.getElementById('headerMenu').style.display = "block";
+
+  var navont = document.querySelector('.nav-cont');
+  var contactsList = document.querySelector('.contacts-list');
+
+  document.getElementById('navCont').appendChild(navont);
+  document.getElementById('contactsList').appendChild(contactsList);
+
 }
 
-
+ 
 // Отримуємо елементи
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("openModalBtn");
