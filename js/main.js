@@ -1,12 +1,14 @@
 function openHeaderMenu() {
   document.getElementById('headerMenu').style.display = "block";
 
-  var navont = document.querySelector('.nav-cont');
+  var navCont = document.querySelector('.nav-cont');
   var contactsList = document.querySelector('.contacts-list');
 
-  document.getElementById('navCont').appendChild(navont);
+  document.getElementById('navCont').appendChild(navCont);
   document.getElementById('contactsList').appendChild(contactsList);
 
+  navCont.style.display = 'block';
+  contactsList.style.display = 'block';
 }
 
  
