@@ -228,6 +228,7 @@ body {
   z-index: 1;
   overflow: auto;
   margin: 0 0 0 -2vw;
+  padding: 0vw 5.27vw 0 6.9vw; 
 }
 #navCont {
   
@@ -237,6 +238,7 @@ body {
 }
 .menu-close {
   float: right;
+  cursor: pointer;
 }
 
 

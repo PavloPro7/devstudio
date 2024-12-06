@@ -11,6 +11,17 @@ function openHeaderMenu() {
   contactsList.style.display = 'block';
 }
 
+function closeHeaderMenu() {
+  document.getElementById('headerMenu').style.display = "none";
+
+  var navCont = document.getElementById('natCont').firstChild;
+  var contactsList = document.getElementById('contactsList').firstChild;
+
+  document.querySelector('.header').appendChild(navCont);
+  document.querySelector('.header').appendChild(contactsList);
+
+}
+
  
 // Отримуємо елементи
 var modal = document.getElementById("myModal");
