@@ -59,6 +59,11 @@ body {
   display: flex;
   padding: 0;
   margin: 32px 19.6875% 0 0%;
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    margin: 0;
+  }
 }
 .nav-item {
   list-style-type: none;
@@ -77,6 +82,10 @@ body {
   border-radius: 2px;
   transition: 0.3s transform ease;
   transform: scale(0);
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
 }
 .nav-item:hover .nav-item-divider,
 .active {
@@ -134,6 +143,10 @@ body {
   @media screen and (max-width: 1280px) {
     margin: 10px 0px 0 -24px;
   }
+
+  @media screen and (max-width: 640px) {
+    margin: 10px 0 0 0;
+  }
 }
 .contacts-link {
   text-decoration: none;
@@ -155,6 +168,10 @@ body {
   left: -20%;
   top: 0px;
   z-index: 0;
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
 }
 .contacts-link-bg-hover {
   display: none;
@@ -169,6 +186,10 @@ body {
 .contacts-link:focus .contacts-link-bg-hover {
   display: block;
   z-index: 1;
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
 }
 .contacts-link-tel {
   padding: 0;
@@ -176,18 +197,24 @@ body {
   height: 16px;
   margin-right: 8px;
   margin-left: 22px;
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
 }
 .contacts-link-tel-hover {
   position: absolute;
   left: 22px;
   display: none;
 }
-.tel-item {
-  position: relative;
-}
+
 .contacts-link:hover .contacts-link-tel-hover,
 .contacts-link:focus .contacts-link-tel-hover {
   display: block;
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
 }
 
 #openMenuBtn {
@@ -228,17 +255,18 @@ body {
   z-index: 1;
   overflow: auto;
   margin: 0 0 0 -2vw;
-  padding: 0vw 5.27vw 0 6.9vw; 
+  padding: 3.43vw 5.27vw 0 6.9vw; 
 }
-#navCont {
-  
-}
-#contactsList {
-  
+.menu-content {
+  display: flex;
+  flex-direction: column;
+
 }
 .menu-close {
   float: right;
   cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 1.37vw;
 }
 
 
