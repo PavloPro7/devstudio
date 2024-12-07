@@ -558,6 +558,9 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  @media screen and (max-width: 640px) {
+    grid-template-columns: initial;
+  }
 }
 
 .content-item {
