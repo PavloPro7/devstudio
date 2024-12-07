@@ -9,19 +9,36 @@ function openHeaderMenu() {
 
   navCont.style.display = 'block';
   contactsList.style.display = 'block';
+
+
 }
 
 function closeHeaderMenu() {
   document.getElementById('headerMenu').style.display = "none";
 
-  var navCont = document.getElementById('natCont').firstChild;
-  var contactsList = document.getElementById('contactsList').firstChild;
+  var navCont = document.getElementById('navCont').firstElementChild;
+  var contactsList = document.getElementById('contactsList').firstElementChild;
 
   document.querySelector('.header').appendChild(navCont);
   document.querySelector('.header').appendChild(contactsList);
 
+  if (window.innerWidth <= 640) {
+    navCont.style.display = 'none';
+    contactsList.style.display = 'none';
+  }
 }
 
+window.addEventListener('resize', function() {
+  if (window.innerWidth > 640) {
+    document.querySelector('.nav-cont').style.display = 'block';
+    document.querySelector('.contacts-list').style.display = 'block';
+  } else {
+    if (document.querySelector('.header').contains(document.querySelector('.nav-cont'))) {
+      document.querySelector('.nav-cont').style.display = 'none';
+      document.querySelector('.contacts-list').style.display = 'none';
+    }
+  }
+});
  
 // Отримуємо елементи
 var modal = document.getElementById("myModal");
