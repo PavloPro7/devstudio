@@ -62,13 +62,18 @@ body {
 
   @media screen and (max-width: 640px) {
     flex-direction: column;
-    margin: 0;
+    margin: 0 0 306px 0;
+    gap: 5.5vh;
   }
 }
 .nav-item {
   list-style-type: none;
   margin-right: 17.543%;
   height: 48px;
+
+  @media screen and (max-width: 640px) {
+    height: auto;
+  }
 }
 .nav-item:last-child {
   margin-right: 0;
@@ -99,7 +104,10 @@ body {
   color: var(--black);
   transition: color 0.3s linear;
   cursor: pointer;
-  padding-bottom: 32px;
+
+  @media screen and (max-width: 640px) {
+    font-size: 40px;
+  }
 }
 .nav-link:hover,
 .active {
