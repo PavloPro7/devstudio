@@ -558,7 +558,7 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 480px) {
     grid-template-columns: initial;
   }
 }
@@ -770,9 +770,9 @@ form {
 .customers {
   text-align: center;
   display: block;
+  margin-top: 10.3vh;
 
     @media screen and (max-width: 1280px) {
-    margin-top: 270px;
     margin-right: 4%;
   }
 }
