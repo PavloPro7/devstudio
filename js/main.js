@@ -39,7 +39,29 @@ window.addEventListener('resize', function() {
     }
   }
 });
- 
+
+function applyResponsiveClasses() {
+  var contactsList = document.querySelector('.contacts-list');
+
+  if (window.innerWidth <= 640) {
+    contactsList.style.display = 'none';
+  } else if (window.innerWidth <= 1280) {
+    contactsList.style.flexDirection = 'column';
+    contactsList.style.marginTop = '21px';
+    contactsList.style.display = 'flex';
+  } else {
+    contactsList.style.flexDirection = 'row';
+    contactsList.style.marginTop = '32px';
+    contactsList.style.display = 'flex';
+  }
+}
+
+// Применение стилей при загрузке страницы
+applyResponsiveClasses();
+
+// Применение стилей при изменении размера экрана
+window.addEventListener('resize', applyResponsiveClasses);
+
 // Отримуємо елементи
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("openModalBtn");
