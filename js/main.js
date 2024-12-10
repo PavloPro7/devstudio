@@ -4,8 +4,8 @@ window.addEventListener('resize', function() {
     document.querySelector('.contacts-list').style.display = 'block';
   } else {
     if (document.querySelector('.header').contains(document.querySelector('.nav-cont'))) {
-      document.querySelector('.nav-cont').style.display = 'none';
-      document.querySelector('.contacts-list').style.display = 'none';
+      document.querySelector('.nav-cont').style.display = 'block';
+      document.querySelector('.contacts-list').style.display = 'block';
     }
   }
 });
@@ -20,9 +20,7 @@ function openHeaderMenu() {
   document.getElementById('contactsList').appendChild(contactsList);
 
   navCont.style.display = 'block';
-  contactsList.style.display = 'block';
-
-  
+  contactsList.style.display = 'block';P
 }
 
 
@@ -32,8 +30,8 @@ function closeHeaderMenu() {
   var navCont = document.getElementById('navCont').firstElementChild;
   var contactsList = document.getElementById('contactsList').firstElementChild;
 
-  document.querySelector('.header').appendChild(navCont);
-  document.querySelector('.header').appendChild(contactsList);
+  document.querySelector('.nav-wrap').appendChild(navCont);
+  document.querySelector('.contacts-wrap').appendChild(contactsList);
 
   if (window.innerWidth <= 640) {
     navCont.style.display = 'none';
@@ -47,7 +45,7 @@ function applyResponsiveClasses() {
   var contactsList = document.querySelector('.contacts-list');
 
   if (window.innerWidth <= 640) {
-    contactsList.style.display = 'none';
+    contactsList.style.display = 'block';
   } else if (window.innerWidth <= 1280) {
     contactsList.style.flexDirection = 'column';
     contactsList.style.marginTop = '21px';
@@ -58,12 +56,14 @@ function applyResponsiveClasses() {
     contactsList.style.display = 'flex';
   }
 }
-
 // Применение стилей при загрузке страницы
 applyResponsiveClasses();
 
 // Применение стилей при изменении размера экрана
 window.addEventListener('resize', applyResponsiveClasses);
+
+
+
 
 // Отримуємо елементи
 var modal = document.getElementById("myModal");
