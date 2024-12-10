@@ -138,11 +138,13 @@ body {
 .contacts-list {
   padding: 0;
   margin: 32px 1.4375% 32px auto;
+  display: flex;
   align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 640px) {
     display: none;
-
+    margin: 0 0 64px 0;
   }
 }
 .contacts-item {
@@ -153,9 +155,14 @@ body {
   max-width: 135px;
   min-width: 122px;
   position: relative;
+
+  @media screen and (max-width: 640px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts-item:last-child {
   margin-right: 0;
+  margin-bottom: 0;
 }
 .tel-item {
   align-items: left;
@@ -178,6 +185,8 @@ body {
   padding: 0;
   display: flex;
   position: relative;
+
+  
 }
 .contacts-link-bg, .contacts-link-bg-hover {
   width: 16px;
@@ -209,6 +218,16 @@ body {
 
   @media screen and (max-width: 640px) {
     display: none;
+  }
+}
+.link-item {
+  @media screen and (max-width: 640px) {
+    font-size: 24px;
+  }
+}
+.tel-item {
+  @media screen and (max-width: 640px) {
+    font-size: 40px;
   }
 }
 .contacts-link-tel {
