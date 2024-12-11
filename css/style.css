@@ -22,20 +22,22 @@ body {
   margin: 0;
   padding: 0 13.4375vw 0 13.4375vw;
   max-height: 80px;
-  min-height: 60px;
   width: 100%;
 
   @media screen and (max-width: 1280px) {
     padding: 0 2vw;
   }
   @media screen and (max-width: 640px) {
+    height: 60px;
     justify-content: space-between;
   }
 }
 
 .header-logo-cont {
-  margin: 24px 5.75% 25px 0;
+  margin: auto 5.75% auto 0;
   padding: 0;
+  display: flex;
+
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -308,17 +310,16 @@ body {
   margin-bottom: 1.37vw;
   width: 19px;
   height: 19px;
-  opacity: 0;
+  opacity: 1;
   z-index: 1;
   
 }
 .close-icon {
-  position: absolute;
-  right: 5.27vw;
-  fill: var(--black)
+  fill: var(--black);
 }
 
-.menu-close:hover .close-icon {
+.menu-close:hover .close-icon,
+.menu-close:focus .close-icon {
   fill: var(--red);
 }
 
