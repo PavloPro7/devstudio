@@ -323,8 +323,30 @@ body {
   fill: var(--red);
 }
 
-
-
+.menu-soc-list {
+  display: flex;
+  gap: 2.08vw;
+  margin: 8.04vh 0 0 0;
+  padding: 0;
+}
+.menu-soc-item {
+  list-style-type: none;
+  padding-left: 2.08vw;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.menu-soc-item:first-child {
+  padding-right: 0;
+  border: none
+}
+.menu-soc-link {
+  text-decoration: none;
+  color: var(--red);
+  letter-spacing: calc(1em/50);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  
+}
 
 
 /* HERO */
