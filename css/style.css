@@ -146,7 +146,7 @@ body {
 
   @media screen and (max-width: 640px) {
     display: none;
-    margin: 0 0 64px 0;
+    margin: 0 0 32px 0;
   }
 }
 .contacts-item {
@@ -160,6 +160,8 @@ body {
 
   @media screen and (max-width: 640px) {
     margin-bottom: 32px;
+    max-height: auto;
+    max-width: auto;
   }
 }
 .contacts-item:last-child {
@@ -326,7 +328,7 @@ body {
 .menu-soc-list {
   display: flex;
   gap: 2.08vw;
-  margin: 8.04vh 0 0 0;
+  margin: 8.04vh 0 6.03vh 0;
   padding: 0;
 }
 .menu-soc-item {
