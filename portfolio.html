@@ -1,397 +1,497 @@
-<!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Портфоліо</title>
-  </head>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Портфоліо</title>
+    </head>
 
-  <body>
-    <svg aria-hidden="true" style="position:absolute;width:0;height:0" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
-      <defs>
-        <symbol id="closeMenu">
-          <path d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z"/>
-        </symbol>
-      </defs> 
-    </svg>
-  
-  
-    <header class="header">
-      <div class="header-logo-cont">
-        <a class="logo" href="index.html"><span class="logo-first">Dev</span>studio</a>
-      </div>
-  
-      <div class="nav-wrap">
-        <nav class="nav-cont">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html">Студія</a>
-              <div class="nav-item-divider"></div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  active" href="/portfolio.html">Портфоліо</a>
-              <div class="nav-item-divider active"></div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакти</a>
-              <div class="nav-item-divider"></div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      
-  
-      <div class="contacts-wrap">
-        <ul class="contacts-list">
-          <li class="contacts-item">
-            <a class="contacts-link link-item" href="mailto:info@devstudio.com">
-              <div class="contacts-link-bg">
-                <img src="/images/envelope.svg" alt="email" class="contacts-link-bg-img" />
-              </div>
-              <div class="contacts-link-bg-hover">
-                <img src="/images/envelope-red.svg" alt="email" class="contacts-link-bg-img-red">
-              </div>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts-item ">
-            <a class="contacts-link tel-item" href="tel:+380961111111">
-              <div class="contacts-link-tel">
-                <img src="/images/smartphone.svg" alt="smartphone" class="tel-link-img" />
-              </div>
-              <div class="contacts-link-tel-hover">
-                <img src="/images/smartphone-red.svg" alt="smartphone" class="tel-link-img" />
-              </div>
-              +380961111111
-            </a>
-          </li>
-        </ul>
-      </div>
-      
-  
-      <button id="openMenuBtn" onclick="openHeaderMenu()">
-        <img src="/images/burger.png" alt="burger" class="burger">
-        <img src="/images/burger-red.png" alt="burger" class="burger-hover">
-      </button>
-  
-      <div id="headerMenu" class="header-menu">
-        <div class="menu-content">
-          <span class="menu-close" onclick="closeHeaderMenu()">
-            <svg class="close-icon" width="19" height="19">
-            <use href="#closeMenu"></use>
-          </svg>
-          </span>
-          
-    
-          <div id="navCont"></div>
-    
-          <div id="contactsList"></div>
-  
-          <ul class="menu-soc-list">
-            <li class="menu-soc-item">
-              <a href="#" class="menu-soc-link">
-                Instagram
-              </a>
-            </li>
-            <li class="menu-soc-item">
-              <a href="#" class="menu-soc-link">
-                Twitter
-              </a>
-            </li>
-            <li class="menu-soc-item">
-              <a href="#" class="menu-soc-link">
-                Facebook
-              </a>
-            </li>
-            <li class="menu-soc-item">
-              <a href="#" class="menu-soc-link">
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-            
-        </div>
-      </div>
-    </header>
+    <body>
+        <svg
+            aria-hidden="true"
+            style="position: absolute; width: 0; height: 0"
+            width="19"
+            height="19"
+            viewBox="0 0 19 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            overflow="hidden"
+        >
+            <defs>
+                <symbol id="closeMenu">
+                    <path
+                        d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z"
+                    />
+                </symbol>
+            </defs>
+        </svg>
 
-    <main>
-      <ul class="filter-list">
-        <li class="filter-item">
-          <button class="filter-item-button" type="button">Усі</button>
-        </li>
-        <li class="filter-item">
-          <button class="filter-item-button" type="button">Веб-сайти</button>
-        </li>
-        <li class="filter-item">
-          <button class="filter-item-button" type="button">Додатки</button>
-        </li>
-        <li class="filter-item">
-          <button class="filter-item-button" type="button">Дизайн</button>
-        </li>
-        <li class="filter-item">
-          <button class="filter-item-button" type="button">Маркетинг</button>
-        </li>
-      </ul>
-
-      <ul class="projects-list">
-        <li class="projects-item">
-          <a href="#" class="projects-item-link">
-            <div class="projects-item-cont">
-              <img
-                src="images/technofix.jpg"
-                alt="technofix"
-                width="370"
-                height="294"
-              />
-              <p class="projects-item-cont-descr">
-                Ресурс пропонує комплексні пропозиції з різним рівнем
-                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                вичерпні відомості про компанію чи приватну особу.
-              </p>
+        <header class="header">
+            <div class="header-logo-cont">
+                <a class="logo" href="index.html"
+                    ><span class="logo-first">Dev</span>studio</a
+                >
             </div>
-            <h2 class="projects-item-title">Технокряк</h2>
-            <p class="projects-item-descr">Веб-сайт</p>
-          </a>
-        </li>
 
-        <li class="projects-item">
-          <a href="#" class="projects-item-link">
-            <div class="projects-item-cont">
-              <img
-              class="projects-item-img"
-              src="images/poster.jpg"
-              alt="poster"
-              width="370"
-              height="294"
-              />
-              
-              <p class="projects-item-cont-descr">
-                Онлайн-платформа для покупки та продажу сучасних гаджетів та аксесуарів. Включає інтеграцію з популярними платіжними системами та систему відстеження замовлень.
-              </p>
+            <div class="nav-wrap">
+                <nav class="nav-cont">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Studio</a>
+                            <div class="nav-item-divider"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/portfolio.html"
+                                >Portfolio</a
+                            >
+                            <div class="nav-item-divider active"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                            <div class="nav-item-divider"></div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-              <h2 class="projects-item-title">
-              Постер New Orlean vs Golden Star
-              </h2>
-              <p class="projects-item-descr">Дизайн</p>
-          </a>
-        </li>
 
-        <li class="projects-item">
-          <a href="#" class="projects-item-link">
-            <div class="projects-item-cont">
-              <img
-              class="projects-item-img"
-              src="images/restaurant.jpg"
-              alt="restaurant"
-              width="370"
-              height="294"
-              />
-              <p class="projects-item-cont-descr">
-                Сайт агентства, яке надає послуги з розробки брендів, графічного дизайну та маркетингових стратегій. Підтримує портфоліо проектів та відгуки клієнтів.
-              </p>
+            <div class="contacts-wrap">
+                <ul class="contacts-list">
+                    <li class="contacts-item">
+                        <a
+                            class="contacts-link link-item"
+                            href="mailto:info@devstudio.com"
+                        >
+                            <div class="contacts-link-bg">
+                                <img
+                                    src="/images/envelope.svg"
+                                    alt="email"
+                                    class="contacts-link-bg-img"
+                                />
+                            </div>
+                            <div class="contacts-link-bg-hover">
+                                <img
+                                    src="/images/envelope-red.svg"
+                                    alt="email"
+                                    class="contacts-link-bg-img-red"
+                                />
+                            </div>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts-item">
+                        <a
+                            class="contacts-link tel-item"
+                            href="tel:+380961111111"
+                        >
+                            <div class="contacts-link-tel">
+                                <img
+                                    src="/images/smartphone.svg"
+                                    alt="smartphone"
+                                    class="tel-link-img"
+                                />
+                            </div>
+                            <div class="contacts-link-tel-hover">
+                                <img
+                                    src="/images/smartphone-red.svg"
+                                    alt="smartphone"
+                                    class="tel-link-img"
+                                />
+                            </div>
+                            +380961111111
+                        </a>
+                    </li>
+                </ul>
             </div>
-            
-            <h2 class="projects-item-title">Ресторан Seafood</h2>
-            <p class="projects-item-descr">Додаток</p>
-          </a>
-        </li>
 
-        <li class="projects-item">
-          <a href="#" class="projects-item-link">
-            <div class="projects-item-cont">
-              <img
-              class="projects-item-img"
-              src="images/project_prime.jpg"
-              alt="prime"
-              width="370"
-              height="294"
-              />
-              <p class="projects-item-cont-descr">
-                Додаток для моніторингу здоров'я та фітнесу. Дозволяє користувачам відстежувати фізичну активність, споживання калорій та прогрес у досягненні цілей.
-              </p>
+            <button id="openMenuBtn" onclick="openHeaderMenu()">
+                <img src="/images/burger.png" alt="burger" class="burger" />
+                <img
+                    src="/images/burger-red.png"
+                    alt="burger"
+                    class="burger-hover"
+                />
+            </button>
+
+            <div id="headerMenu" class="header-menu">
+                <div class="menu-content">
+                    <span class="menu-close" onclick="closeHeaderMenu()">
+                        <svg class="close-icon" width="19" height="19">
+                            <use href="#closeMenu"></use>
+                        </svg>
+                    </span>
+
+                    <div id="navCont"></div>
+
+                    <div id="contactsList"></div>
+
+                    <ul class="menu-soc-list">
+                        <li class="menu-soc-item">
+                            <a href="#" class="menu-soc-link"> Instagram </a>
+                        </li>
+                        <li class="menu-soc-item">
+                            <a href="#" class="menu-soc-link"> Twitter </a>
+                        </li>
+                        <li class="menu-soc-item">
+                            <a href="#" class="menu-soc-link"> Facebook </a>
+                        </li>
+                        <li class="menu-soc-item">
+                            <a href="#" class="menu-soc-link"> LinkedIn </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            
-            <h2 class="projects-item-title">Проєкт Prime</h2>
-            <p class="projects-item-descr">Маркетинг</p>
-          </a>
-        </li>
+        </header>
 
-        <li class="projects-item">
-          <a href="#" class="projects-item-link">
-            <div class="projects-item-cont">
-              <img
-              class="projects-item-img"
-              src="images/project_boxes.jpg"
-              alt="boxes"
-              width="370"
-              height="294"
-              />
-              <p class="projects-item-cont-descr">
-                Веб-сайт фотостудії, яка пропонує послуги професійної фотозйомки та обробки зображень. Має галерею зразків робіт та можливість онлайн-бронювання.
-              </p>
-            </div>
-            
-            <h2 class="projects-item-title">Проєкт Boxes</h2>
-            <p class="projects-item-descr">Додаток</p>
-          </a>
-        </li>
-
-        <li class="projects-item">
-          <a href="#" class="projects-item-link">
-            <div class="projects-item-cont">
-              <img
-              class="projects-item-img"
-              src="images/inspiration.jpg"
-              alt="inspiration"
-              width="370"
-              height="294"
-              />
-              <p class="projects-item-cont-descr">
-                Блог з рецептами та кулінарними порадами. Включає детальні інструкції, фотографії та відео з приготування страв, а також можливість залишати коментарі та відгуки.
-              </p>
-            </div>
-            
-            <h2 class="projects-item-title">Inspiration has no Borders</h2>
-            <p class="projects-item-descr">Веб-сайт</p>
-          </a>
-        </li>
-
-        <li class="projects-item">
-          <a href="#" class="projects-item-link">
-            <div class="projects-item-cont">
-              <img
-              class="projects-item-img"
-              src="images/limited.jpg"
-              alt="limited"
-              width="370"
-              height="294"
-              />
-              <p class="projects-item-cont-descr">
-                Веб-сайт Технологічний ресурс, що пропонує комплексні послуги з різним рівнем функціоналу та сервісів. Дозволяє відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-              </p>
-            </div>
-            
-            <h2 class="projects-item-title">Видання Limited Edition</h2>
-            <p class="projects-item-descr">Дизайн</p>
-          </a>
-        </li>
-
-        <li class="projects-item">
-          <a href="#" class="projects-item-link">
-            <div class="projects-item-cont">
-              <img
-              class="projects-item-img"
-              src="images/project_lab.jpg"
-              alt="lab"
-              width="370"
-              height="294"
-              />
-              <p class="projects-item-cont-descr">
-                Дизайн Вишуканий дизайн для спеціального видання, що пропонує унікальний контент для обраної аудиторії. Створено з увагою до деталей та сучасних тенденцій в дизайні.
-              </p>
-            </div>
-            
-            <h2 class="projects-item-title">Проєкт LAB</h2>
-            <p class="projects-item-descr">Маркетинг</p>
-          </a>
-        </li>
-
-        <li class="projects-item">
-          <a href="#" class="projects-item-link">
-            <div class="projects-item-cont">
-              <img
-              class="projects-item-img"
-              src="images/grove.jpg"
-              alt="grove"
-              width="370"
-              height="294"
-              />
-              <p class="projects-item-cont-descr">
-                Маркетинг Комплексна маркетингова кампанія для просування нового бренду на ринок. Включає розробку стратегії, створення контенту та активну роботу з цільовою аудиторією.
-              </p>
-            </div>
-            
-            <h2 class="projects-item-title">Growing Business</h2>
-            <p class="projects-item-descr">Додаток</p>
-          </a>
-        </li>
-      </ul>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-contacts-cont">
-        <div class="footer-cont">
-          <div class="footer-logo-cont">
-            <a class="logo" href="#"><span class="logo-first">Dev</span icon-hover><span
-                class="logo-second">studio</span></a>
-          </div>
-          <address class="footer-address">
-            м. Київ, пр-т Лесі Українки, 26
-            <ul class="footer-contacts-list">
-              <li class="footer-contacts-item">
-                <a class="footer-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li class="footer-contacts-item">
-                <a class="footer-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
+        <main>
+            <ul class="filter-list">
+                <li class="filter-item">
+                    <button class="filter-item-button" type="button">
+                        All
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button class="filter-item-button" type="button">
+                        Websites
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button class="filter-item-button" type="button">
+                        Applications
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button class="filter-item-button" type="button">
+                        Design
+                    </button>
+                </li>
+                <li class="filter-item">
+                    <button class="filter-item-button" type="button">
+                        Marketing
+                    </button>
+                </li>
             </ul>
-          </address>
-        </div>
-    
-        <div class="footer-soc-cont">
-          <div class="footer-soc-list-cont">
-            <h3 class="footer-title">приєднуйтесь</h3>
-            <ul class="autors-item-social-media-list footer-soc-list">
-              <li class="autors-item-social-media-item footer-soc-item">
-                <a href="#" class="autors-item-social-media-item-link">
-                  <img src="/images/instagram-svg.svg" alt="instagram" class="autors-item-social-media-item-img" />
-                </a>
-              </li>
-              <li class="autors-item-social-media-item footer-soc-item">
-                <a href="#" class="autors-item-social-media-item-link">
-                  <img src="/images/twitter-svg.svg" alt="twitter" class="autors-item-social-media-item-img" /></a>
-              </li>
-              <li class="autors-item-social-media-item footer-soc-item">
-                <a href="#" class="autors-item-social-media-item-link"><img src="/images/fb-svg.svg" alt="facebook"
-                    class="autors-item-social-media-item-img" /></a>
-              </li>
-              <li class="autors-item-social-media-item footer-soc-item">
-                <a href="#" class="autors-item-social-media-item-link"><img src="/images/linkedin-svg.svg" alt=""
-                    class="autors-item-social-media-item-img" /></a>
-              </li>
+
+            <ul class="projects-list">
+                <li class="projects-item">
+                    <a href="#" class="projects-item-link">
+                        <div class="projects-item-cont">
+                            <img
+                                src="images/technofix.jpg"
+                                alt="technofix"
+                                width="370"
+                                height="294"
+                            />
+                            <p class="projects-item-cont-descr">
+                                A responsive website for an IT consulting team,
+                                showcasing services and team members.
+                            </p>
+                        </div>
+                        <h2 class="projects-item-title">Technocracker</h2>
+                        <p class="projects-item-descr">Website</p>
+                    </a>
+                </li>
+
+                <li class="projects-item">
+                    <a href="#" class="projects-item-link">
+                        <div class="projects-item-cont">
+                            <img
+                                class="projects-item-img"
+                                src="images/poster.jpg"
+                                alt="poster"
+                                width="370"
+                                height="294"
+                            />
+
+                            <p class="projects-item-cont-descr">
+                                A dynamic sports poster design highlighting the
+                                energy of a basketball showdown.
+                            </p>
+                        </div>
+                        <h2 class="projects-item-title">
+                            New Orleans vs Golden Star
+                        </h2>
+                        <p class="projects-item-descr">Design</p>
+                    </a>
+                </li>
+
+                <li class="projects-item">
+                    <a href="#" class="projects-item-link">
+                        <div class="projects-item-cont">
+                            <img
+                                class="projects-item-img"
+                                src="images/restaurant.jpg"
+                                alt="restaurant"
+                                width="370"
+                                height="294"
+                            />
+                            <p class="projects-item-cont-descr">
+                                A brand identity and logo design for a modern
+                                seafood restaurant.
+                            </p>
+                        </div>
+
+                        <h2 class="projects-item-title">Seafood Restaurant</h2>
+                        <p class="projects-item-descr">Application</p>
+                    </a>
+                </li>
+
+                <li class="projects-item">
+                    <a href="#" class="projects-item-link">
+                        <div class="projects-item-cont">
+                            <img
+                                class="projects-item-img"
+                                src="images/project_prime.jpg"
+                                alt="prime"
+                                width="370"
+                                height="294"
+                            />
+                            <p class="projects-item-cont-descr">
+                                A product promo concept for premium headphones
+                                aimed at minimalist branding.
+                            </p>
+                        </div>
+
+                        <h2 class="projects-item-title">Project Prime</h2>
+                        <p class="projects-item-descr">Marketing</p>
+                    </a>
+                </li>
+
+                <li class="projects-item">
+                    <a href="#" class="projects-item-link">
+                        <div class="projects-item-cont">
+                            <img
+                                class="projects-item-img"
+                                src="images/project_boxes.jpg"
+                                alt="boxes"
+                                width="370"
+                                height="294"
+                            />
+                            <p class="projects-item-cont-descr">
+                                A packaging design for a health supplement brand
+                                with a clean and modern look.
+                            </p>
+                        </div>
+
+                        <h2 class="projects-item-title">Boxes Project</h2>
+                        <p class="projects-item-descr">Application</p>
+                    </a>
+                </li>
+
+                <li class="projects-item">
+                    <a href="#" class="projects-item-link">
+                        <div class="projects-item-cont">
+                            <img
+                                class="projects-item-img"
+                                src="images/inspiration.jpg"
+                                alt="inspiration"
+                                width="370"
+                                height="294"
+                            />
+                            <p class="projects-item-cont-descr">
+                                A landing page for a global tech company,
+                                featuring dark UI and map integration.
+                            </p>
+                        </div>
+
+                        <h2 class="projects-item-title">
+                            Inspiration has no Borders
+                        </h2>
+                        <p class="projects-item-descr">Website</p>
+                    </a>
+                </li>
+
+                <li class="projects-item">
+                    <a href="#" class="projects-item-link">
+                        <div class="projects-item-cont">
+                            <img
+                                class="projects-item-img"
+                                src="images/limited.jpg"
+                                alt="limited"
+                                width="370"
+                                height="294"
+                            />
+                            <p class="projects-item-cont-descr">
+                                A magazine layout showcasing exclusive fashion
+                                and lifestyle content.
+                            </p>
+                        </div>
+
+                        <h2 class="projects-item-title">Limited Edition</h2>
+                        <p class="projects-item-descr">Design</p>
+                    </a>
+                </li>
+
+                <li class="projects-item">
+                    <a href="#" class="projects-item-link">
+                        <div class="projects-item-cont">
+                            <img
+                                class="projects-item-img"
+                                src="images/project_lab.jpg"
+                                alt="lab"
+                                width="370"
+                                height="294"
+                            />
+                            <p class="projects-item-cont-descr">
+                                Tag and label design for a minimalist product
+                                branding campaign.
+                            </p>
+                        </div>
+
+                        <h2 class="projects-item-title">LAB Project</h2>
+                        <p class="projects-item-descr">Marketing</p>
+                    </a>
+                </li>
+
+                <li class="projects-item">
+                    <a href="#" class="projects-item-link">
+                        <div class="projects-item-cont">
+                            <img
+                                class="projects-item-img"
+                                src="images/grove.jpg"
+                                alt="grove"
+                                width="370"
+                                height="294"
+                            />
+                            <p class="projects-item-cont-descr">
+                                Illustrative landing page for a business growth
+                                platform with marketing tools.
+                            </p>
+                        </div>
+
+                        <h2 class="projects-item-title">Growing Business</h2>
+                        <p class="projects-item-descr">Application</p>
+                    </a>
+                </li>
             </ul>
-          </div>
-        </div>
-      </div>
-      
-      <form action="#" method="post" class="subscribe-form">
-        <label class="subscribe-label">
-          Підпишіться на розсилку
-          <input class="subscribe-input" type="email" class="subscribe-input" placeholder="E-mail">
-        </label>
-        <input class="subscribe-submit" type="submit" value="Підписатися">
-        <img src="/images/iconsend.png" alt="iconsend" class="icon-send">
-      </form>
-  
-  
-    </footer>
-    <script src="/js/main.js"></script>
-  </body>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-contacts-cont">
+                <div class="footer-cont">
+                    <div class="footer-logo-cont">
+                        <a class="logo" href="#"
+                            ><span class="logo-first">Dev</span
+                            ><span class="logo-second">studio</span></a
+                        >
+                    </div>
+                    <address class="footer-address">
+                        Kyiv, Lesi Ukrainky Ave., 26
+                        <ul class="footer-contacts-list">
+                            <li class="footer-contacts-item">
+                                <a
+                                    class="footer-contacts-link"
+                                    href="mailto:info@devstudio.com"
+                                    >info@devstudio.com</a
+                                >
+                            </li>
+                            <li class="footer-contacts-item">
+                                <a
+                                    class="footer-contacts-link"
+                                    href="tel:+380961111111"
+                                    >+38 096 111 11 11</a
+                                >
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <div class="footer-soc-cont">
+                    <div class="footer-soc-list-cont">
+                        <h3 class="footer-title">join</h3>
+                        <ul
+                            class="autors-item-social-media-list footer-soc-list"
+                        >
+                            <li
+                                class="autors-item-social-media-item footer-soc-item"
+                            >
+                                <a
+                                    href="#"
+                                    class="autors-item-social-media-item-link"
+                                >
+                                    <img
+                                        src="/images/instagram-svg.svg"
+                                        alt="instagram"
+                                        class="autors-item-social-media-item-img"
+                                    />
+                                </a>
+                            </li>
+                            <li
+                                class="autors-item-social-media-item footer-soc-item"
+                            >
+                                <a
+                                    href="#"
+                                    class="autors-item-social-media-item-link"
+                                >
+                                    <img
+                                        src="/images/twitter-svg.svg"
+                                        alt="twitter"
+                                        class="autors-item-social-media-item-img"
+                                /></a>
+                            </li>
+                            <li
+                                class="autors-item-social-media-item footer-soc-item"
+                            >
+                                <a
+                                    href="#"
+                                    class="autors-item-social-media-item-link"
+                                    ><img
+                                        src="/images/fb-svg.svg"
+                                        alt="facebook"
+                                        class="autors-item-social-media-item-img"
+                                /></a>
+                            </li>
+                            <li
+                                class="autors-item-social-media-item footer-soc-item"
+                            >
+                                <a
+                                    href="#"
+                                    class="autors-item-social-media-item-link"
+                                    ><img
+                                        src="/images/linkedin-svg.svg"
+                                        alt=""
+                                        class="autors-item-social-media-item-img"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <form action="#" method="post" class="subscribe-form">
+                <label class="subscribe-label">
+                    Subscribe to the newsletter
+                    <input
+                        class="subscribe-input"
+                        type="email"
+                        class="subscribe-input"
+                        placeholder="E-mail"
+                    />
+                </label>
+                <input class="subscribe-submit" type="submit" value="Sign Up" />
+                <img
+                    src="/images/iconsend.png"
+                    alt="iconsend"
+                    class="icon-send"
+                />
+            </form>
+        </footer>
+        <script src="/js/main.js"></script>
+    </body>
 </html>
